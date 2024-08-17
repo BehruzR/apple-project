@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1080px;
+    height: 100%;
+    padding: 0 15px;
+}
+
+.logo{
+    max-width: 120vh;
+    width: 100%;
+}
+
+.banners-top{
+    background: url(./imges/the-relay.png)  no-repeat, center/cover;
+    height: 80vh;
+    width: 100%;
+}
+
+.banners-btn{
+    background: url(./imges/banner-iphone.png) no-repeat, center/cover;
+    height: 80vh;
+    width: 100%;
+}
+
+.products__top-macbook{
+    max-width: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.swiper-slide-img{
+    max-width: 980px;
+    width: 100%;
+    height: 523px;
+}
+
+.swiper-wrapper{
+    margin-bottom: 40px;
+    display: flex;
+    gap: 15px;
+    transition: all 4s;
+}
+
+.swiper-pagination-bullet{
+    background: rgb(126, 119, 119);
+}
+
+.swiper-pagination-bullet:hover{
+    background: rgb(5, 5, 5);
+}
+
+.swiper-slide{
+    position: relative;
+}
+
+@media (max-width:1326px){
+    .banners-top{
+        height: 110vh;
+    }
+    .banners-btn{
+        height: 110vh;
+    }
+}
+@media (max-width:878px){
+    .footer-copyright{
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__copyright-box{
+        padding-left: 140px;
+    }
+}

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+    </script>    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="">
+      <div class="fixed z-30  w-full top-0">
+        <nav class="w-full py-3 bg-[rgb(40,40,41)]">
+          <div class="container">
+            <div  class="flex items-center justify-center gap-4">
+              <a class="text-white hover:underline" href="#">Education Store Home</a>
+              <div class="w-px h-4 bg-white"></div>
+              <a class="text-white hover:underline" href="#">Exit</a>
+            </div>
+          </div>
+        </nav>
+        <nav class="bg-[rgb(24,24,24)] py-3 w-full flex justify-center opacity-75">
+            <div class="container">
+                <ul class="flex gap-8 flex-wrap justify-center">
+                    <li ><a href="#"><img class="w-5 h-5" src="./imges/icon-logo.svg" alt=""></a></li>
+                    <li ><a class="text-xs text-slate-400 hover:text-white" href="#">Store</a></li>
+                    <li ><a class="text-xs text-slate-400 hover:text-white" href="#">Mac</a></li>
+                    <li ><a class="text-xs text-slate-400 hover:text-white" href="#">iPad</a></li>
+                    <li ><a class="text-xs text-slate-400 hover:text-white" href="#">iPhone</a></li>
+                    <li ><a class="text-xs text-slate-400 hover:text-white" href="#">Watch</a></li>
+                    <li ><a class="text-xs text-slate-400 hover:text-white" href="#">Vision</a></li>
+                    <li ><a class="text-xs text-slate-400 hover:text-white" href="#">AirPods</a></li>
+                    <li ><a class="text-xs text-slate-400 hover:text-white" href="#">TV & Home</a></li>
+                    <li ><a class="text-xs text-slate-400 hover:text-white" href="#">Entertainment</a></li>
+                    <li ><a class="text-xs text-slate-400 hover:text-white" href="#">Accessories</a></li>
+                    <li ><a class="text-xs text-slate-400 hover:text-white" href="#">Support</a></li>
+                    <li ><img class="w-5 h-5" src="./imges/icon-search.svg" alt=""></li>
+                    <li ><img class="w-5 h-5" src="./imges/icon-bag.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+      
+        
+    </header>
+    <main>
+      <div class="banners flex flex-col gap-3">
+        <div class="banners-top flex flex-col justify-center items-center gap-8">
+          <h2 class="text-6xl font-semibold text-white">The Relay</h2>
+          <h2 class="text-3xl text-white text-center">Apple products are designed <br> for every athlete. And every body.</h2>
+          <a href="#"><button class="w-32 h-10 rounded-3xl bg-slate-50 hover:bg-white">Watch th film</button></a>
+        </div>
+        <div class="banners-btn flex flex-col justify-center items-center gap-8">
+          <h2 class="text-6xl font-semibold text-white">iPhone</h2>
+          <h2 class="text-3xl text-white text-center">Our most powerful cameras yet. <br> Ultrafast chips. And USB-C.</h2>
+          <a href="#"><button class="w-32 h-10 rounded-3xl bg-slate-50 hover:bg-white">Watch th film</button></a>
+        </div>
+      </div>
+      <div class="products">
+        <div class="products__top flex flex-col gap-3 my-3">
+          <div class="flex flex-col items-center pb-8 bg-[rgb(245,245,247)]">
+            <img class="products__top-img" src="./imges/buy-mac.png" alt="">
+            <button class="w-24 h-10 border-solid border border-blue-600 rounded-3xl text-blue-600 hover:bg-blue-600 hover:text-white">Shop</button>
+          </div>
+          <div class="flex flex-col items-center pt-10 bg-[rgb(245,245,247)] ">
+            <h2 class="text-6xl font-medium mb-3">MacBook Air</h2>
+            <h3 class="text-3xl">Lean.Mean.M3 machine</h3>
+            <div class="flex justify-center gap-3 mt-5">
+              <a href="#"><button class="w-32 h-10 rounded-3xl bg-blue-600 hover:bg-blue-500 text-white">Learn more</button></a>
+              <a href="#"><button class="w-20 h-10 border-solid border border-blue-600 rounded-3xl text-blue-600 hover:bg-blue-600 hover:text-white">Buy</button></a>
+            </div>
+            <img class="products__top-macbook" src="./imges/macbook-air.png" alt="">
+          </div>
+        </div>
+        <div class="products__btn flex flex-wrap justify-center gap-3">
+          <div class="flex flex-col items-center gap-2 pt-12 bg-black">
+            <h2 class="text-white text-4xl font-medium ">iPhone</h2>
+            <h3 class="text-white text-lg text-xl font-medium text-center">Our most powerful cameras yet.<br>Ultrafast chips.And USB-C.</h3>
+            <div class="pb-6 pt-2 flex gap-3">
+              <a href="#"><button class="text-white w-32 h-10 rounded-3xl bg-blue-600 hover:bg-blue-500 text-white">Learn more</button></a>
+              <a href="#"><button class="w-32 h-10 border-solid border border-blue-600 rounded-3xl text-blue-600 hover:bg-blue-600 hover:text-white">Shop iPhone</button></a>              
+            </div>
+            <img src="./imges/iphone.png" alt="">
+          </div>
+          <div class="flex flex-col items-center gap-2 pt-12 bg-[rgb(245,245,247)]">
+            <h2 class="text-4xl font-medium">Apple intelligence</h2>
+            <h3 class="text-lg text-xl font-medium">AI for rest of us.</h3>
+            <h3 class="text-lg text-sm font-medium text-slate-400">Comming in beta this fall <sup>1</sup></h3>
+            <div class="pb-6 pt-2 flex gap-3">
+              <a href="#"><button class="text-white w-32 h-10 rounded-3xl bg-blue-600 hover:bg-blue-500 text-white">Learn more</button></a>
+              <a href="#"><button class="w-32 h-10 border-solid border border-blue-600 rounded-3xl text-blue-600 hover:bg-blue-600 hover:text-white">Wath the film</button></a>              
+            </div>
+            <img src="./imges/apple-intelligence.png" alt="">
+          </div>
+          <div class="flex flex-col items-center gap-2 pt-12 bg-black">
+            <h2 class="text-white text-4xl font-medium">iPad Pro</h2>
+            <h3 class="text-white text-lg text-xl font-medium text-center">Unbelievably thin.Incredibly powerful</h3>
+            <div  class="pb-6 pt-4 flex gap-3">
+              <a href="#"><button class="text-white w-32 h-10 rounded-3xl bg-blue-600 hover:bg-blue-500 text-white">Learn more</button></a>
+              <a href="#"><button class="w-20 h-10 border-solid border border-blue-600 rounded-3xl text-blue-600 hover:bg-blue-600 hover:text-white">Buy</button></a>              
+            </div>
+            <img src="./imges/ipad-pro.png" alt="">
+          </div>
+          <div class="flex flex-col items-center pt-12 bg-black">
+            <h2 class="text-white text-4xl font-medium flex items-center"><span class=""><img class=" w-8 h-8" src="./imges/icon-logo.svg" alt=""></span>WATCH</h2>
+            <h3 class="text-red-600 text-sm text-center">SERIES 9</h3>
+            <h3 class="text-white text-lg text-xl font-medium text-center">Smarter.Brighter.Mightier.</h3>
+            <div class="mt-3 mb-12">
+              <a href="#"><button class="text-white w-32 h-10 rounded-3xl bg-blue-600 hover:bg-blue-500 text-white">Learn more</button></a>
+              <a href="#"><button class="w-20 h-10 border-solid border border-blue-600 rounded-3xl text-blue-600 hover:bg-blue-600 hover:text-white">Buy</button></a>              
+            </div>
+            <img src="./imges/watch.png" alt="">
+          </div>
+          <div class="flex flex-col items-center pt-12 bg-[rgb(245,245,247)] gap-2">
+            <h2 class="text-black text-4xl font-medium flex items-center"><span class=""><img class=" w-8 h-8" src="./imges/black-logo.svg" alt=""></span>Cart</h2>
+            <h3 class="text-black text-lg text-xl font-medium text-center">Get up to 3% Daily Cash back <br>with every purchase</h3>
+            <div class="mt-5 mb-3">
+              <a href="#"><button class="text-white w-32 h-10 rounded-3xl bg-blue-600 hover:bg-blue-500 text-white">Learn more</button></a>
+              <a href="#"><button class="w-20 h-10 border-solid border border-blue-600 rounded-3xl text-blue-600 hover:bg-blue-600 hover:text-white">Buy</button></a>              
+            </div>
+            <img src="./imges/cart.png" alt="">
+          </div>
+          <div class="flex flex-col items-center pt-12 bg-[rgb(245,245,247)] gap-2">
+            <h2 class="text-black text-4xl font-medium flex items-center"><span class=""><img class=" w-8 h-8" src="./imges/black-logo.svg" alt=""></span>Trade in</h2>
+            <h3 class="text-black text-lg text-xl font-medium text-center">Get $170-$620 in credit when you<br>trade in iPhone 11 or higher. <sup class="text-xs">1</sup></h3>
+            <div class="mt-5 mb-3">
+              <a href="#"><button class="text-white w-32 h-10 rounded-3xl bg-blue-600 hover:bg-blue-500 text-white">Learn more</button></a>
+              <a href="#"><button class="w-20 h-10 border-solid border border-blue-600 rounded-3xl text-blue-600 hover:bg-blue-600 hover:text-white">Buy</button></a>              
+            </div>
+            <img src="./imges/trade-in.png" alt="">
+          </div>
+        </div>
+      </div>
+      <section class="serials my-2">
+        <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="./imges/friday-night-baseball.jpeg" alt="">
+            <div class="swiper-slide-box absolute bottom-10 left-10 z-10 flex items-center gap-3">
+              <a href="#"><button class="w-36 h-10 rounded-3xl bg-[rgb(245,245,247)] hover:bg-white">See the schedule</button> </a>
+              <h2 class="text-white text-xl">Live MLB games, every Friday</h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="./imges/bad-monkey.jpg" alt="">
+            <div class="swiper-slide-box swiper-slide-box absolute bottom-10 left-10 z-10 flex items-center gap-3">
+              <a href="#"><button class="w-36 h-10 rounded-3xl bg-[rgb(245,245,247)] hover:bg-white">Stream now</button></a>
+              <h2 class="text-white text-xl flex items-center gap-1"><span class="text-white text-xl font-bold">Comedy</span><div class="w-1 h-1 rounded-full bg-white mt-2"></div>The shady side of paradise</h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="./imges/the-instigators.jpg" alt="">
+            <div class="swiper-slide-box swiper-slide-box absolute bottom-10 left-10 z-10 flex items-center gap-3">
+              <a href="#"><button class="w-40 h-10 rounded-3xl bg-[rgb(245,245,247)] hover:bg-white">Stream now</button></a>
+              <h2 class="text-white text-xl flex items-center gap-1"><span class="text-white text-xl font-bold">Action</span><div class="w-1 h-1 rounded-full bg-white mt-2"></div>Worst.Eist.Ever.</h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="./imges/presumed-innocent.jpeg" alt="">
+            <div class="swiper-slide-box swiper-slide-box absolute bottom-10 left-10 z-10 flex items-center gap-3">
+              <a href="#"><button class="w-40 h-10 rounded-3xl bg-[rgb(245,245,247)] hover:bg-white">Stream now</button></a>
+              <h2 class="text-white text-xl flex items-center gap-1"><span class="text-white text-xl font-bold">Crime</span><div class="w-1 h-1 rounded-full bg-white mt-2"></div>Presume nothing.</h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="./imges/leagues-cup.jpg" alt="">
+            <div class="swiper-slide-box absolute bottom-10 left-10 z-10 flex items-center gap-3">
+              <a href="#"><button class="w-36 h-10 rounded-3xl bg-[rgb(245,245,247)] hover:bg-white">See the schedule</button></a>
+              <h2 class="text-white text-xl font-black">Watch Messi,every club,and every match--live</h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="./imges/cow-cartel.jpg" alt="">
+            <div class="swiper-slide-box swiper-slide-box absolute bottom-10 left-10 z-10 flex items-center gap-3">
+              <a href="#"><button class="w-40 h-10 rounded-3xl bg-[rgb(245,245,247)] hover:bg-white">Stream now</button></a>
+              <h2 class="text-white text-xl flex items-center gap-1"><span class="text-white text-xl font-bold">Documentary</span><div class="w-1 h-1 rounded-full bg-white mt-2"></div>A deadly crime ring in the winner's circle</h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="./imges/lady-in-the-lake.jpg" alt="">
+            <div class="swiper-slide-box swiper-slide-box absolute bottom-10 left-10 z-10 flex items-center gap-3">
+              <a href="#"><button class="w-40 h-10 rounded-3xl bg-[rgb(245,245,247)] hover:bg-white">Stream now</button></a>
+              <h2 class="text-white text-xl flex items-center gap-1"><span class="text-white text-xl font-bold">Thriller</span><div class="w-1 h-1 rounded-full bg-white mt-2"></div>Natalie Portman and Moses Ingram star in a visionary noir thriller.</h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="./imges/sunny.jpg" alt="">
+            <div class="swiper-slide-box swiper-slide-box absolute bottom-10 left-10 z-10 flex items-center gap-3">
+              <a href="#"><button class="w-40 h-10 rounded-3xl bg-[rgb(245,245,247)] hover:bg-white">Stream now</button></a>
+              <h2 class="text-white text-xl flex items-center gap-1"><span class="text-white text-xl font-bold">Mystery</span><div class="w-1 h-1 rounded-full bg-white mt-2"></div>Rashida Jones stars in a futuristic, darkly funny story of loss, secrets, and robots.</h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="./imges/time-bandits.jpg" alt="">
+            <div class="swiper-slide-box swiper-slide-box absolute bottom-10 left-10 z-10 flex items-center gap-3">
+              <a href="#"><button class="w-40 h-10 rounded-3xl bg-[rgb(245,245,247)] hover:bg-white">Stream now</button></a>
+              <h2 class="text-white text-xl flex items-center gap-1"><span class="text-white text-xl font-bold">Adventure</span><div class="w-1 h-1 rounded-full bg-white mt-2"></div>History just got hijacked.</h2>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide-img" src="./imges/the-morning-show.jpg" alt="">
+            <div class="swiper-slide-box swiper-slide-box absolute bottom-10 left-10 z-10 flex items-center gap-3">
+              <a href="#"><button class="w-40 h-10 rounded-3xl bg-[rgb(245,245,247)] hover:bg-white">Stream now</button></a>
+              <h2 class="text-white text-xl flex items-center gap-1"><span class="text-white text-xl font-bold">Drama</span><div class="w-1 h-1 rounded-full bg-white mt-2"></div>16 Emmy® Nominations Including Best Drama</h2>
+            </div>
+          </div>
+        </div>
+          <div class="swiper-pagination"></div>
+      </div>
+      </section>
+    </main>
+    <footer class="footer  bg-[rgb(245,245,247)]">
+      <section class="footer-top py-4 px-32">
+        <div class="container">
+          <ul class=" flex flex-col gap-3">
+          <li class="text text-slate-600 text-xs">
+          * Available for Qualified Purchasers only. Qualified Purchasers receive an Apple Gift Card when they purchase an Eligible Product at a Qualifying Location through September 30, 2024. Gift card values may vary by Eligible Product. Only one Apple Gift Card per Eligible Product per Qualified Purchaser. Offer subject to availability. While supplies last. Qualified Purchasers shall receive a discount equal to the value of the Apple Gift Card off the price of the Eligible Product, but will be charged for all items in their cart, including the Apple Gift Card. Important notice regarding the checkout receipt and monthly statement for Apple Card Monthly Installments (ACMI) purchases with this promotion: Qualified Purchasers selecting ACMI (a 0% APR payment option available only in the U.S.) as payment type at checkout shall receive a discount equal to the value of the Apple Gift Card off the price of the Eligible Product. This will result in one ACMI installment plan over 12 months for the Eligible Product discounted by the instant credit, and a second ACMI installment plan over 12 months for the full price of the Apple Gift Card. The total combined amount charged over the two separate ACMI installment plans will reflect the original full retail price of the Eligible Product. Separately, Qualified Purchasers will receive and be charged for the Apple Gift Card in the amount of the applicable discount off the Eligible Product. Apple Card Monthly Installments (ACMI) is a 0% APR payment option that is only available if you select it at checkout in the U.S. for eligible products purchased at Apple Store locations, <span> <a class="text-slate-900 underline" href="#"> apple.com</a></span>, the Apple Store app, or by calling 1-800-MY-APPLE, and is subject to credit approval and credit limit. See <span><a class="text-slate-900 underline" href="#">support.apple.com/kb/HT211204</a></span> for more information about eligible products. APR ranges may vary based on when you accepted an Apple Card. Cardholders who accept an Apple Card on and or after February 1, 2024: Variable APRs for Apple Card, other than ACMI, range from 19.24% to 29.49% based on creditworthiness. Rates as of February 1, 2024. Existing cardholders: See your Customer Agreement for applicable rates and fee. If you buy an ACMI-eligible product by choosing to pay in full with Apple Card (instead of using ACMI), that purchase is subject to the Apple Card variable APR, not 0% APR. Taxes and shipping on ACMI purchases are subject to the variable APR, not 0% APR. When you buy an iPhone with ACMI, you’ll need to select AT&T, T-Mobile, or Verizon as your carrier when you check out. An iPhone purchased with ACMI is always unlocked, so you can switch carriers at any time. ACMI is not available for purchases made online at the following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government and Veterans and Military Purchase Programs; or on refurbished devices. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount. ACMI financing is subject to change at any time for any reason, including but not limited to installment term lengths and eligible products. See <span class="text-slate-900 underline"><a href="#">support.apple.com/kb/HT211204</a></span> for information about upcoming changes to ACMI financing. See the <span><a class="text-slate-900 underline" href="#">Apple Card Customer Agreement</a></span> for more information about ACMI financing. Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch. Available for qualifying applicants in the United States. If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about accessing this offer or applying for Apple Card. This offer cannot be combined with the Apple Employee Purchase Plan or business loyalty pricing. Additional restrictions apply. View full terms and conditions of offer <span><a class="text-slate-900 underline" href="#">here.</a></span>
+        </li>
+        <li class="text text-slate-600 text-xs">1. Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to be eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in-store and online trade-in. Some stores may have additional requirements. Apple or its trade-in partners reserve the right to refuse or limit quantity of any trade-in transaction for any reason. More details are available from Apple’s trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply.</li>
+        <li class="text text-slate-600 text-xs">Available in the U.S. on <span><a class="text-slate-900 underline" href="#">apple.com</a></span>, in the Apple Store app, and at Apple Stores.</li>
+        <li class="text text-slate-600 text-xs">To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.</li>
+        <li class="text text-slate-600 text-xs">If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about Apple Card.</li>
+        <li class="text text-slate-600 text-xs">Learn more about how Apple Card applications are evaluated at <span><a class="text-slate-900 underline" href="#">support.apple.com/kb/HT209218.</a></span></li>
+        <li class="text text-slate-600 text-xs">A subscription is required for Apple TV+</li>
+        <li class="text text-slate-600 text-xs">A subscription is required for Apple Arcade, Apple Fitness+, and Apple Music.</li>
+        </ul>
+        </div>
+      </section>
+      <div class="bg-[rgb(206,206,207)] w-4/5 h-px my-3 mx-32"></div>
+      <section class="footer-btn px-32">
+        <div class="container">
+        <nav class="flex">
+          <div class="footer__btn-box basis-1/4 flex flex-col gap-6">
+            <div class="flex flex-col gap-2">
+              <h2 class="font-semibold text-xs">Shop and Learn</h2>
+              <ul class="flex flex-col gap-1">
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Store</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Mac</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">iPad</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">iPhone</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Watch</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Vision</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">AirPods</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">TV & Home</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">AirTag</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Accessories</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Gift Cards</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h2 class="font-semibold text-xs">Apple Wallet</h2>
+              <ul class="flex flex-col gap-2">
+                <li class="text-slate-500 text-xs hover:underline"><a href="#"></a>Wallet</li>
+                <li class="text-slate-500 text-xs hover:underline"><a href="#"></a>Apple Card</li>
+                <li class="text-slate-500 text-xs hover:underline"><a href="#"></a>Apple Pay</li>
+                <li class="text-slate-500 text-xs hover:underline"><a href="#"></a>Apple Cash</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__btn-box basis-1/4 flex flex-col gap-6">
+            <div class="flex flex-col gap-2">
+              <h2 class="font-semibold text-xs">Account</h2>
+              <ul class="flex flex-col gap-2">
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Manage Your Apple ID</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Apple Store Account</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">iCloud.com</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h2 class="font-semibold text-xs">Entertainment</h2>
+              <ul class="flex flex-col gap-2">
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Apple One</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Apple TV+</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Apple Music</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Apple Arcade</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Apple Fitness+</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Apple News+</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Apple Podcasts</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Apple Books</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">App Store</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__btn-box basis-1/4 flex flex-col gap-6">
+            <div class="flex flex-col gap-2">
+              <h2 class="font-semibold text-xs">Apple Store</h2>
+              <ul class="flex flex-col gap-2">
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Find a Store</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Genius Bar</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Today at Apple</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Group Reservations</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Apple Camp</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Apple Store App</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Certified Refurbished</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Apple Trade In</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Financing</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Carrier Deals at Apple</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Order Status</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Shopping Help</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__btn-box basis-1/4 flex flex-col gap-6">
+            <div class="flex flex-col gap-2">
+              <h2 class="font-semibold text-xs">For Business</h2>
+              <ul class="flex flex-col gap-2">
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Apple and Business</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Shop for Business</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h2 class="font-semibold text-xs">For Education</h2>
+              <ul class="flex flex-col gap-2">
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Apple and Education</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Shop for K-12</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Shop for College</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h2 class="font-semibold text-xs">For Healthcare</h2>
+              <ul class="flex flex-col gap-2">
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Apple in Healthcare</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Mac in Healthcare</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Health on Apple Watch</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Health Records on iPhone and iPad</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-2">
+              <h2 class="font-semibold text-xs">For Government</h2>
+              <ul class="flex flex-col gap-2">
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Shop for Government</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Shop for Veterans and Military</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__btn-box basis-1/4 flex flex-col gap-6">
+            <div class="flex flex-col gap-2">
+              <h2 class="font-semibold text-xs">Apple Values</h2>
+              <ul class="flex flex-col gap-2">
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Accessibility</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Education</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Environment</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Inclusion and Diversity</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Privacy</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Racial Equity and Justice</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Supply Chain</a></li>
+              </ul>
+            </div>
+            <div class="footer__btn-box basis-1/4">
+              <h2 class="font-semibold text-xs">About Apple</h2>
+              <ul class="flex flex-col gap-2">
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Newsroom</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Apple Leadership</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Career Opportunities</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Investors</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Ethics & Compliance</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Events</a></li>
+                <li><a class="text-slate-500 text-xs hover:underline" href="#">Contact Apple</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </div>
+      </section>
+      <h3 class="text-slate-500 text-xs px-36 pt-10 pb-3">More ways to shop: <span class="text-blue-600 underline"><a href="#"> Find an Apple Store</a></span> or <span  class="text-blue-600 underline"><a href="#">other retailer</a></span> near you. Or call 1-800-MY-APPLE.</h3>
+      <div class="bg-[rgb(206,206,207)] w-4/5 h-px my-3 mx-32"></div>
+      <div class="footer-copyright px-36 pt-2 pb-3 flex items-center flex-wrap">
+        <h3 class="text-slate-500 text-xs">Copyright © 2024 Apple Inc. All rights reserved.</h3>
+        <div class="footer__copyright-box flex gap-4 items-center pl-10 pr-64">
+          <div><a class="text-slate-700 text-xs hover:underline " href="#">Privacy Policy</a></div>
+          <div class="w-px h-3 bg-[rgb(128,128,129)]"></div>
+          <div><a class="text-slate-700 text-xs hover:underline" href="#">Terms of Use</a></div>
+          <div class="w-px h-3 bg-[rgb(128,128,129)]"></div>
+          <div><a class="text-slate-700 text-xs hover:underline" href="#">Sales and Refunds</a></div>
+          <div class="w-px h-3 bg-[rgb(128,128,129)]"></div>
+          <div><a class="text-slate-700 text-xs hover:underline" href="#">Legal</a></div>
+          <div class="w-px h-3 bg-[rgb(128,128,129)]"></div>
+          <div><a class="text-slate-700 text-xs hover:underline" href="#">Site Map</a></div>
+        </div>
+        <a class="text-slate-700 text-xs hover:underline" href="#">United States</a>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+import swiper from 'https://cdn.jsdelivr.net/npm/swiper@11.1.9/+esm'
+</script>
+</body>
+</html>
