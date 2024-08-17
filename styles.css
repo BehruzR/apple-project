@@ -69,6 +69,9 @@
     .banners-btn{
         height: 110vh;
     }
+    .header-nav.gap-8{
+        gap: 10px;
+    }
 }
 @media (max-width:878px){
     .footer-copyright{
@@ -77,5 +80,45 @@
     }
     .footer__copyright-box{
         padding-left: 140px;
+    }
+    .footer__copyright-box.pr-64{
+        padding-right: 1px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer__btn-box{
+        gap: 20px;
+    }
+    .block{
+        width: 100%;
+    }
+    
+}
+@media (max-width:738px){
+    .footer-block.mx-32{
+        margin-left: 15%;
+    }
+    .footer__btn-box{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .footer-top.px-32{
+        padding-left: 50px;
+        padding-right: 0;
+    }
+    .footer-btn.px-32{
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    .footer-copyright.px-36{
+        padding-right: 0px;
+        padding-left: 10px;
+    }
+    .footer__copyright-box.pl-10{
+        padding-left: 10px;
+    }
+    .banners-top.gap-8{
+        gap: 5px;
     }
 }
