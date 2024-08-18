@@ -64,10 +64,10 @@
 
 @media (max-width:1326px){
     .banners-top{
-        height: 100vh;
+        height: 40vh;
     }
     .banners-btn{
-        height: 100vh;
+        height: 40vh;
     }
     .header-nav.gap-8{
         gap: 10px;
