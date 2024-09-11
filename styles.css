@@ -1,124 +1,130 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
 }
 
-.container{
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1080px;
-    height: 100%;
-    padding: 0 15px;
+.main-container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1365px;
+	height: 100%;
 }
 
-.logo{
-    max-width: 120vh;
-    width: 100%;
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1080px;
+	height: 100%;
+	padding: 0 15px;
 }
 
-.banners-top{
-    background: url(./imges/the-relay.png)  no-repeat, center/cover;
-    height: 80vh;
-    width: 100%;
+.logo {
+	max-width: 120vh;
+	width: 100%;
 }
 
-.banners-btn{
-    background: url(./imges/banner-iphone.png) no-repeat, center/cover;
-    height: 80vh;
-    width: 100%;
+.banners-top {
+	background: url(./imges/the-relay.png) no-repeat, center/cover;
+	min-height: 520px;
+	width: 100%;
 }
 
-.products__top-macbook{
-    max-width: 100vh;
-    width: 100%;
-    margin: 0 auto;
+.banners-btn {
+	background: url(./imges/banner-iphone.png) no-repeat, center/cover;
+	min-height: 520px;
+	width: 100%;
 }
 
-.swiper-slide-img{
-    max-width: 980px;
-    width: 100%;
-    height: 523px;
+.products__top-macbook-item {
+	max-width: 600px;
+	width: 100%;
+	margin: 0 150px;
 }
 
-.swiper-wrapper{
-    margin-bottom: 40px;
-    display: flex;
-    gap: 15px;
-    transition: all 4s;
+.swiper-slide-img {
+	max-width: 980px;
+	width: 100%;
+	height: 523px;
 }
 
-.swiper-pagination-bullet{
-    background: rgb(126, 119, 119);
+.swiper-wrapper {
+	margin-bottom: 40px;
+	display: flex;
+	gap: 15px;
+	transition: all 4s;
 }
 
-.swiper-pagination-bullet:hover{
-    background: rgb(5, 5, 5);
+.swiper-pagination-bullet {
+	background: rgb(126, 119, 119);
 }
 
-.swiper-slide{
-    position: relative;
+.swiper-pagination-bullet:hover {
+	background: rgb(5, 5, 5);
 }
 
-@media (max-width:1326px){
-    .banners-top{
-        height: 40vh;
-    }
-    .banners-btn{
-        height: 40vh;
-    }
-    .header-nav.gap-8{
-        gap: 10px;
-    }
+.swiper-slide {
+	position: relative;
 }
-@media (max-width:878px){
-    .footer-copyright{
-        justify-content: center;
-        align-items: center;
-    }
-    .footer__copyright-box{
-        padding-left: 140px;
-    }
-    .footer__copyright-box.pr-64{
-        padding-right: 1px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .footer__btn-box{
-        gap: 20px;
-    }
-    .block{
-        width: 100%;
-    }
-    
+
+@media (max-width: 1326px) {
+	.banners-top {
+		height: 40vh;
+	}
+	.banners-btn {
+		height: 40vh;
+	}
+	.header-nav.gap-8 {
+		gap: 10px;
+	}
 }
-@media (max-width:738px){
-    .footer-block.mx-32{
-        margin-left: 15%;
-    }
-    .footer__btn-box{
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .footer-top.px-32{
-        padding-left: 50px;
-        padding-right: 0;
-    }
-    .footer-btn.px-32{
-        padding-left: 20px;
-        padding-right: 0;
-    }
-    .footer-copyright.px-36{
-        padding-right: 0px;
-        padding-left: 10px;
-    }
-    .footer__copyright-box.pl-10{
-        padding-left: 10px;
-    }
-    .banners-top.gap-8{
-        gap: 5px;
-    }
+@media (max-width: 878px) {
+	.footer-copyright {
+		justify-content: center;
+		align-items: center;
+	}
+	.footer__copyright-box {
+		padding-left: 140px;
+	}
+	.footer__copyright-box.pr-64 {
+		padding-right: 1px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.footer__nav-list {
+		gap: 20px;
+	}
+	.block {
+		width: 100%;
+	}
+}
+@media (max-width: 738px) {
+	.footer-block.mx-32 {
+		margin-left: 15%;
+	}
+	.footer__nav-list {
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.footer-top.px-32 {
+		padding-left: 50px;
+		padding-right: 0;
+	}
+	.footer-btn.px-32 {
+		padding-left: 20px;
+		padding-right: 0;
+	}
+	.footer-copyright.px-36 {
+		padding-right: 0px;
+		padding-left: 10px;
+	}
+	.footer__copyright-box.pl-10 {
+		padding-left: 10px;
+	}
+	.banners-top.gap-8 {
+		gap: 5px;
+	}
 }
