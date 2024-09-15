@@ -69,6 +69,11 @@
 	position: relative;
 }
 
+.footer__nav-list {
+	display: flex;
+	align-items: center;
+}
+
 @media (max-width: 1326px) {
 	.banners-top {
 		height: 40vh;
